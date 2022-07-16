@@ -34,15 +34,15 @@ public class Produtomain {
                     System.out.println("Produto não encontrado. ");
                 }
             } else if (opcao == 3) {
+                System.out.println("Esses são os seus produtos adicionados até o momento: ");
                 System.out.println(listaproduto.exibirProdutos());
 
             } else if (opcao == 0) {
+                System.out.println("Obrigada e até a próxima! ");
                 executar = false;
             } else {
                 System.out.println("Opção inválida! ");
             }
-
-
         }
     }
 }
