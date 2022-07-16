@@ -2,7 +2,7 @@ package exercicio1;
 
 import java.util.Scanner;
 
-public class Produtomain {
+public class ProdutoMain {
     public static void main(String[] args) {
         GerenciarListaProdutos listaproduto = new GerenciarListaProdutos();
 
