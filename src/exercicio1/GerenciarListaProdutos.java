@@ -12,7 +12,7 @@ public class GerenciarListaProdutos {
     }
 
     public boolean remover(String nome) {
-       return produtos.removeIf(produto -> produto.getNome().equalsIgnoreCase(nome));
+        return produtos.removeIf(produto -> produto.getNome().equalsIgnoreCase(nome));
 
     }
 
