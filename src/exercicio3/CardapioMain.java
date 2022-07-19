@@ -16,35 +16,35 @@ public class CardapioMain {
             System.out.println("Digite 3 para excluir: ");
             System.out.println("digite 0 para sair");
 
-Integer  opcao = input.nextInt();
-if (opcao ==1) {
-    System.out.println("Informe a quantidade de pratos que deseja adicionar: ");
-Integer quantidade = input.nextInt();
-for (Integer i = 1; i <= quantidade; i++) {
-        System.out.println(i +  "Nome do prato: ");
-        String nome = input.nextLine();
-        System.out.println("quantidade de ingredientes: " + nome);
-Integer quantidadeIngredientes = input.nextInt();
-        List<String> listaIngredientes = new ArrayList<>();
-        for (int j = 1; j <= quantidadeIngredientes; j++){
-            System.out.println(j + "º ingrediente");
-            listaIngredientes.add(input.next());
+            Integer opcao = input.nextInt();
+            if (opcao == 1) {
+                System.out.println("Informe a quantidade de pratos que deseja adicionar: ");
+                Integer quantidade = input.nextInt();
+                for (Integer i = 1; i <= quantidade; i++) {
+                    System.out.println(i + " Nome do prato: ");
+                    String nome = input.next();
+                    System.out.println("quantidade de ingredientes: " + nome);
+                    Integer quantidadeIngredientes = input.nextInt();
+                    List<String> ingredientes = new ArrayList<>();
+                    for (int j = 1; j <= quantidadeIngredientes; j++) {
+                        System.out.println(j + "º ingredientes");
+                        ingredientes.add(input.next());
 
-        }
-        cardapio1.adicionarPrato(nome, listaIngredientes);
-                 }
-   } else if (opcao == 2){
-    cardapio1.exibirPratos();
+                    }
+                    cardapio1.adicionarPrato(nome, ingredientes);
+                }
+            } else if (opcao == 2) {
+                cardapio1.exibirPratos();
             } else if (opcao == 3) {
-    System.out.println("Digite o nome do prato que deseja excluir: ");
-    String nome = input.next();
-            cardapio1.excluirPrato(nome);
-            } else if (opcao == 0){
-    System.out.println("Programa encerrado, até a próxima! ");
-    executar = false;
-            } else{
-    System.out.println("Opção inválida, digite um número de 0 a 3: ");
-}
+                System.out.println("Digite o nome do prato que deseja excluir: ");
+                String nome = input.next();
+                cardapio1.excluirPrato(nome);
+            } else if (opcao == 0) {
+                System.out.println("Programa encerrado, até a próxima! ");
+                executar = false;
+            } else {
+                System.out.println("Opção inválida, digite um número de 0 a 3: ");
+            }
         }
     }
 }

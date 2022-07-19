@@ -3,8 +3,8 @@ package exercicio3;
 import java.util.List;
 
 public class Prato {
-private String nomedoPrato;
-private String ingredientes;
+    private String nomedoPrato;
+    private String ingredientes;
 
     public Prato(String nomedoPrato, List<String> ingredientes) {
         this.nomedoPrato = nomedoPrato;
